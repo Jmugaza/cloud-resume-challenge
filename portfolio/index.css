@@ -115,11 +115,10 @@ h3 { font-size: var(--fs-h3);}
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: relative;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
 }
-
 
 /* Header*/
 header{
@@ -127,7 +126,6 @@ header{
     justify-content: space-between;
     padding: 1em;
     margin-bottom: 4em;
-    background: transparent;
 }
 
 .nav {
@@ -160,7 +158,6 @@ header{
     font-size: var(--fs-h2);
     text-decoration: none;
 }
-
 
 .nav-link:hover{
     color: var(--clr-light);
@@ -225,9 +222,6 @@ right: 0;
 .hambuger::before {top: 6px;}
 .hambuger::after {bottom: 6px;}
 
-@media (max-width: 600px) {
-
-}
 
 ul {
     display: flex;
@@ -278,8 +272,6 @@ strong {
     margin: 0 auto;
     text-align: center;
 }
-
-
 
 .intro-social-link:hover{
     opacity: .7;
@@ -452,7 +444,6 @@ svg{
     margin: auto;
     padding: auto;
 }
-
 
 .portfolio-item {
     background: var(--clr-blue);
