@@ -9,7 +9,7 @@ This project deploys a static resume website hosted on Amazon S3, secured with H
 ## Architecture
 
 
-![Architecture Diagram](images/Cloud-Resume-Architechture.png)
+![Architecture Diagram](Cloud-Resume-Architechture.png)
 
 
 ## AWS Services and Tools Used
