@@ -126,6 +126,7 @@ header{
     justify-content: space-between;
     padding: 1em;
     margin-bottom: 4em;
+    background: transparent;
 }
 
 .nav {
