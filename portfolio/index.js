@@ -11,8 +11,6 @@ navLinks.forEach(link => {
   })
 })
 
-
-
 // Function to change the job title with typewriter animation
 function changeJobTitle() {
   const jobTitleElement = document.getElementById('job-title');
@@ -60,6 +58,6 @@ function changeJobTitle() {
     // Start the typewriter animation
     typeAndErase();
 }
-// Automatically start the animation after a delay
+
 setTimeout(changeJobTitle, 2000);
 

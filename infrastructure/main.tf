@@ -1,10 +1,10 @@
-# Create an AWS Lambda function
+#  AWS Lambda function
 resource "aws_lambda_function" "count_function" {
   filename      = data.archive_file.zip_python_code.output_path # Path to your Lambda deployment package
   source_code_hash = data.archive_file.zip_python_code.output_base64sha256
   function_name = "count_function"
   handler       = "func.lambda_handler"
-  runtime       = "python3.11"  # Choose the appropriate runtime for your Lambda function
+  runtime       = "python3.11"
 
   # IAM Role for Lambda execution
   role = aws_iam_role.lambda_role.arn
