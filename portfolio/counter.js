@@ -4,7 +4,6 @@ const counter = document.querySelector(".visitor-count");
 
 async function updateCounter() {
   try {
-    // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint URL
     const response = await fetch('https://dmxg2d77z3.execute-api.us-east-1.amazonaws.com/visitorsCount', {
       method: 'GET',
       mode: 'cors', // Enable CORS handling
