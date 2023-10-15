@@ -110,6 +110,7 @@ h3 { font-size: var(--fs-h3);}
     margin-bottom: 2em;
 }
 
+/* Header*/
 .background-img{
     background-image: url(images/background.png);
     background-size: cover;
@@ -120,7 +121,6 @@ h3 { font-size: var(--fs-h3);}
     width: 100%;
 }
 
-/* Header*/
 header{
     display: flex;
     justify-content: space-between;
@@ -184,7 +184,6 @@ header{
     position: fixed;
 }
 
-
 .nav-open .hambuger {
     transform: rotate(.625turn);
 }
@@ -222,7 +221,6 @@ right: 0;
 
 .hambuger::before {top: 6px;}
 .hambuger::after {bottom: 6px;}
-
 
 ul {
     display: flex;
@@ -315,7 +313,7 @@ strong {
     }
 }
 
-/* Add a transition effect to smoothly change the text */
+/* transition effect to smoothly change the text */
 .section-subtitle-intro {
     transition: opacity 0.5s;
 }
@@ -360,6 +358,9 @@ strong {
     .portfolio-descriptionz{
         font-size: 6px;
     }
+    .about-me-body{
+        font-size: small;
+    }
 }
 
 /*about section*/
@@ -375,7 +376,6 @@ strong {
         margin-right: auto;
         margin-left: auto;
     }
-
     .skills-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -383,6 +383,15 @@ strong {
         justify-items: center;
         padding: .5;
     }
+}
+
+.about-me-body {
+    text-align: center;
+    max-width: 720px;
+    font-size: var(--fw-reg);
+    margin: 5px auto;
+    padding: 5px;
+    border: none;
 }
 
 .about-me h2{
@@ -398,11 +407,19 @@ strong {
     box-shadow: 0 0 10px var(--clr-yellow);
 }
 
+.cert-img{
+    text-align: center;
+}
+
 .cert-img img{
     width: 20%;
     height: 20%;
     display: inline;
     justify-content: center;
+}
+
+.about-me p{
+    text-align: center;
 }
 svg{
     width: 65px;

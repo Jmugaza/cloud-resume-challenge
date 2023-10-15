@@ -11,10 +11,11 @@ navLinks.forEach(link => {
   })
 })
 
+
 // Function to change the job title with typewriter animation
 function changeJobTitle() {
   const jobTitleElement = document.getElementById('job-title');
-  const jobTitles = ['Cloud Engineer','DevOps Engineer', 'Software Developer'];
+  const jobTitles = ['DevOps Engineer', 'Cloud Engineer'];
   let currentJobTitleIndex = 0;
 
   // Function to initiate typing and erasing animations
@@ -54,7 +55,6 @@ function changeJobTitle() {
         setTimeout(typeAndErase, 1000); // Delay before typing the next job title
       }
     }
-
     // Start the typewriter animation
     typeAndErase();
 }
