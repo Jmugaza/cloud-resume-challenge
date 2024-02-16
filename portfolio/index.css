@@ -345,7 +345,7 @@ strong {
         left: -1.5em;
         position: relative;
         width: calc(100% + 1.5em);
-
+        height: 2em;
     }
 
     #section-subtitle-intro{
@@ -355,23 +355,20 @@ strong {
         text-align: center;
     }
 
-    .portfolio-descriptionz{
-        font-size: 6px;
+    .portfolio-description{
+        font-size: var(--fw-reg);
     }
     .about-me-body{
         font-size: small;
     }
-}
 
-/*about section*/
-
-@media (min-width: 600px) {
     .about-me {
         display: flex;
         text-align: center;
         flex-direction: column;
         align-items: center;
     }
+
     .intro-social{
         margin-right: auto;
         margin-left: auto;
@@ -382,6 +379,29 @@ strong {
         gap: 1em;
         justify-items: center;
         padding: .5;
+    }
+}
+
+/*about section*/
+
+@media (max-width: 400px) {
+
+    .section-subtitle-intro {
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: center;
+        left: -1.5em;
+        position: relative;
+        width: calc(100% + 1.5em);
+        height: 2.3em;
+
+    }
+
+    .about-me p{
+        text-align: center;
+        font-size: small;
+        padding: 5px;
     }
 }
 
