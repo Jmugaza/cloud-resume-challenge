@@ -345,7 +345,7 @@ strong {
         left: -1.5em;
         position: relative;
         width: calc(100% + 1.5em);
-        height: 2em;
+        height: 1.5em;
     }
 
     #section-subtitle-intro{
@@ -376,7 +376,7 @@ strong {
     .skills-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1em;
+        gap: 1.5em;
         justify-items: center;
         padding: .5;
     }
