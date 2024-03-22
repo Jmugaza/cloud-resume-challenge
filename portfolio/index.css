@@ -125,6 +125,7 @@ h3 {
   color: var(--clr-blue);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
+  box-shadow: 0 0 10px var(--clr-yellow);
 }
 
 /* Header*/
@@ -307,23 +308,6 @@ strong {
   display: inline-block;
 }
 
-.typewriter {
-  overflow: hidden;
-  border-right: 5px solid var(--clr-yellow); /* Simulate the typing cursor */
-  white-space: nowrap; /* Prevent text from wrapping */
-  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
-}
-
-/* Define the typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 /* transition effect to smoothly change the text */
 .section-subtitle-intro {
   transition: opacity 0.5s;
@@ -384,7 +368,6 @@ strong {
 
   .my-work {
     background-image: linear-gradient(180deg, #1676cf 0%, #ffc300 49%, #000814 100%);
-    text-shadow: var(--clr-yellow) 1px 2px 3px;
   }
 
   .intro-social {
@@ -501,6 +484,7 @@ svg {
   overflow: hidden;
   margin: auto;
   padding: auto;
+
 }
 
 .portfolio-item {
