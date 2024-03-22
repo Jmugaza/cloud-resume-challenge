@@ -125,7 +125,7 @@ h3 {
   color: var(--clr-blue);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
-  box-shadow: 0 0 10px var(--clr-yellow);
+  text-shadow: 0 0 10px var(--clr-yellow);
 }
 
 /* Header*/
