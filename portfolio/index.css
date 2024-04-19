@@ -131,7 +131,7 @@ h3 {
 /* Header*/
 .background-img {
   background-color: var(--clr-dark);
-  background-image: linear-gradient(180deg, #000814 0%, #1676cf 50%, #000814 100%);
+  background-image: linear-gradient(0deg, #000814 0%, #1676cf 50%);
   /*background-image: url(images/background.png);*/
   background-size: cover;
   background-position: center;
