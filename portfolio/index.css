@@ -396,6 +396,23 @@ strong {
   }
 }
 
+.skills-container svg {
+  width: 65px;
+  height: 65px;
+  fill: #F8FAFC;
+
+  background: #1F2937;  /* dark gray circle behind icon */
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #3B82F6;
+  transition: all 0.3s ease;
+}
+
+.skills-container svg:hover {
+  fill: #3B82F6;
+  transform: scale(1.1);
+}
+
 .visitor-count{
   font-weight: var(--fw-bold);
   text-shadow: var(--clr-yellow) 1px 2px 3px;
