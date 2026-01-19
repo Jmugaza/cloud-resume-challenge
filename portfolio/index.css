@@ -5,24 +5,27 @@
 }
 
 :root {
-  --ff-primary: "Cinzel", sans-serif;
+  --ff-primary: "Inter", sans-serif;
   --ff-secondary: "Inter", sans-serif;
 
   --fw-reg: 400;
   --fw-bold: 600;
 
-  --clr-light: #edf2f4;
-  --clr-dark: #000814;
-  --clr-blue: #1676cf;
-  --clr-yellow: #ffc300;
+  /* New Modern Palette */
+  --clr-light: #F8FAFC;       /* clean white-blue */
+  --clr-dark: #0F172A;        /* deep navy */
+  --clr-card: #111827;        /* dark card background */
+  --clr-primary: #3B82F6;     /* vibrant modern blue */
+  --clr-secondary: #22C55E;   /* emerald accent */
+  --clr-accent: #8B5CF6;      /* purple accent */
+  --clr-muted: #94A3B8;       /* soft gray text */
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0125em 0.25em rgba(0, 0, 0, 0.15);
+  --bs: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 @media (min-width: 800px) {
@@ -110,15 +113,15 @@ h3 {
 
 .section-subtitle-intro,
 .section-subtitle-about {
-  background: var(--clr-blue);
-  font-family: var(--ff-secondary);
+  background: var(--clr-primary);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   margin-bottom: 1em;
   padding: 0.25em 1em;
   border-radius: 5px;
   box-shadow: 0 0 10px var(--clr-yellow);
 }
 #job-title{
-  color: var(--clr-yellow);
+  color: var(--clr-secondary);
 }
 
 .section-subtitle-work {
@@ -131,7 +134,7 @@ h3 {
 /* Header*/
 .background-img {
   background-color: var(--clr-dark);
-  background-image: linear-gradient(180deg, #000814 0%, #1676cf 100%);
+  background-image: linear-gradient(180deg, #0F172A 0%, #1E3A8A 100%);
   /*background-image: url(images/background.png);*/
   background-size: cover;
   background-position: center;
@@ -225,7 +228,7 @@ header {
 .hambuger,
 .hambuger::before,
 .hambuger::after {
-  background: var(--clr-blue);
+  background: var(--clr-primary);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -361,7 +364,7 @@ strong {
   
 
   .about-me {
-    background-image: linear-gradient(180deg,  #000814 0%, #1676cf 100%);
+    background-image: linear-gradient(180deg, #0F172A 0%, #1E40AF 100%);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -399,7 +402,7 @@ strong {
 }
 
 .about-me {
-  background-image: linear-gradient(180deg,  #000814 0%, #1676cf 100%);
+  background-image: linear-gradient(180deg, #0F172A 0%, #1E40AF 100%);
 }
 
 /*about section*/
@@ -436,12 +439,12 @@ strong {
 }
 
 .skills-container {
-  background: var(--clr-blue);
-  color: var(--clr-light);
+  background: var(--clr-card);
+  box-shadow: var(--bs);
   text-align: center;
   padding: 1em;
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--clr-yellow);
+  /*box-shadow: 0 0 10px var(--clr-yellow);*/
 }
 
 .cert-img {
@@ -464,7 +467,7 @@ svg {
 }
 
 .download-button {
-  background-color: var(--clr-yellow);
+  background-color: var(--clr-primary);
   color: var(--clr-light);
   border: none;
   padding: 10px 20px;
@@ -478,7 +481,7 @@ svg {
 }
 
 .download-button:hover {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-secondary);
 }
 
 /*My Work*/
@@ -490,7 +493,7 @@ svg {
 }
 
 .my-work {
-  background-image: linear-gradient(180deg, #1676cf 0%, #ffc300 50%, #000814 100%);
+  background-image: linear-gradient(180deg, #0F172A 0%, #1E3A8A 50%, #0F172A 100%);
   /*background-color: var(--clr-dark);*/
   color: var(--clr-light);
   text-align: center;
@@ -502,8 +505,9 @@ svg {
 }
 
 .portfolio-item {
-  background: var(--clr-blue);
-  box-shadow: 0 0 10px var(--clr-yellow);
+  background: var(--clr-card);
+  box-shadow: var(--bs);
+  border: 1px solid #1F2937;
   padding: 20px;
   margin: 20px;
   text-align: center;
@@ -526,7 +530,7 @@ svg {
 .portfolio-title {
   font-size: var(--fs-h3);
   margin-top: 20px;
-  color: var(--clr-yellow);
+  color: var(--clr-primary);
   text-shadow: 0 0 10px var(--clr-dark);
 }
 
@@ -550,8 +554,8 @@ svg {
 }
 
 .btn-code {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: var(--clr-card);
+  border: 1px solid #1F2937;
   text-shadow: 0 0 10px var(--clr-yellow);
 }
 .btn-code:hover {
@@ -559,7 +563,7 @@ svg {
 }
 
 .btn-live {
-  background-color: var(--clr-yellow);
+  background-color: var(--clr-primary);
   text-shadow: 0 0 10px var(--clr-dark);
   color: var(--clr-light);
 }
